@@ -11,5 +11,13 @@
   },
   "rules": {
     "no-console": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["tests/**/*"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
