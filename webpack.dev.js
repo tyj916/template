@@ -6,6 +6,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
+    watchFiles: ['src/**/*.html'],
   },
   module: {
     rules: [
@@ -22,5 +23,8 @@ module.exports = merge(common, {
         }
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 });
